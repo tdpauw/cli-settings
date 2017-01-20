@@ -16,19 +16,6 @@
 # You should have received a copy of the GNU General Public License
 # along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
 
-export PATH=$PATH:~/bin
-
-#bash
-export HISTSIZE=10000
-#don't check mail
-unset MAILCHECK
-
-#ruby
-
-#java
-export JAVA_HOME=$(/usr/libexec/java_home)
-
-#bashrc.d
-for rcfile in $HOME/.bashrc.d/*.bash; do
-  source $rcfile
-done
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+chruby ruby
