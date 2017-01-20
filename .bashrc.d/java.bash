@@ -16,14 +16,4 @@
 # You should have received a copy of the GNU General Public License
 # along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
 
-export PATH=$PATH:~/bin
-
-#bash
-export HISTSIZE=10000
-#don't check mail
-unset MAILCHECK
-
-#bashrc.d
-for rcfile in $HOME/.bashrc.d/*.bash; do
-  source $rcfile
-done
+export JAVA_HOME=$(/usr/libexec/java_home)
