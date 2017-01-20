@@ -20,6 +20,8 @@ export PATH=$PATH:~/bin
 
 #bash
 export HISTSIZE=10000
+#don't check mail
+unset MAILCHECK
 
 #nodejs
 export NVM_DIR=~/.nvm

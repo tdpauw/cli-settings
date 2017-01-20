@@ -17,6 +17,3 @@
 # along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
 
 [[ -r ~/.bashrc ]] && source ~/.bashrc
-
-# Don't check mail when opening terminal.
-unset MAILCHECK
