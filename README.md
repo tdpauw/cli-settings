@@ -1,5 +1,13 @@
 # cli-settings
-Stores the settings for [BASH](https://www.gnu.org/software/bash/) and [Apparix](http://micans.org/apparix/).
+Stores the settings for :
+* [BASH](https://www.gnu.org/software/bash/)
+* [bash-it](https://github.com/Bash-it/bash-it)
+* [Node.js](https://nodejs.org)
+* [Ruby](https://www.ruby-lang.org/en/)
+* [Java](https://www.java.com/)
+* [Maven](https://maven.apache.org/)
+* [thefuck](https://github.com/nvbn/thefuck)
+* [Apparix](http://micans.org/apparix/).
 
 ## Usage
 The settings make use of [bash-it](https://github.com/Bash-it/bash-it), a community BASH framework with autocompletion, themes, aliases and custom functions.
