@@ -7,7 +7,8 @@ Stores the settings for :
 * [Java](https://www.java.com/)
 * [Maven](https://maven.apache.org/)
 * [thefuck](https://github.com/nvbn/thefuck)
-* [Apparix](http://micans.org/apparix/).
+* [Apparix](http://micans.org/apparix/)
+* [VIM](http://www.vim.org/)
 
 ## Usage
 The settings make use of [bash-it](https://github.com/Bash-it/bash-it), a community BASH framework with autocompletion, themes, aliases and custom functions.
