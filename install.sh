@@ -25,3 +25,5 @@ ln -s $DIR/.bashrc.d $HOME/.bashrc.d
 ln -s $DIR/.bash_profile $HOME/.bash_profile
 ln -s $DIR/.apparixrc $HOME/.apparixrc
 ln -s $DIR/.vimrc $HOME/.vimrc
+ln -s $DIR/.gitignore $HOME/.gitignore
+ln -s $DIR/.gitconfig $HOME/.gitconfig

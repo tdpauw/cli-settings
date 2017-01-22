@@ -1,0 +1,14 @@
+[user]
+	name = Thierry de Pauw
+	email = thierry@thinkinglabs.io
+[credential]
+	helper = cache
+[push]
+	default = simple
+[core]
+	autocrlf = input
+	excludesfile = /Users/thipau/.gitignore
+[diff]
+	tool = kdiff3
+[merge]
+	tool = kdiff3

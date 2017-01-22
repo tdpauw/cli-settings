@@ -9,6 +9,7 @@ Stores the settings for :
 * [thefuck](https://github.com/nvbn/thefuck)
 * [Apparix](http://micans.org/apparix/)
 * [VIM](http://www.vim.org/)
+* [git](https://git-scm.com/)
 
 ## Usage
 The settings make use of [bash-it](https://github.com/Bash-it/bash-it), a community BASH framework with autocompletion, themes, aliases and custom functions.
