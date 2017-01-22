@@ -10,6 +10,7 @@ Stores the settings for :
 * [Apparix](http://micans.org/apparix/)
 * [VIM](http://www.vim.org/)
 * [git](https://git-scm.com/)
+* [EditorConfig](http://editorconfig.org/)
 
 ## Usage
 The settings make use of [bash-it](https://github.com/Bash-it/bash-it), a community BASH framework with autocompletion, themes, aliases and custom functions.

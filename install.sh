@@ -27,3 +27,4 @@ ln -s $DIR/.apparixrc $HOME/.apparixrc
 ln -s $DIR/.vimrc $HOME/.vimrc
 ln -s $DIR/.gitignore $HOME/.gitignore
 ln -s $DIR/.gitconfig $HOME/.gitconfig
+ln -s $DIR/.editorconfig $HOME/.editorconfig
