@@ -1,10 +1,29 @@
+#
+# (C) Copyright 2016 Thierry de Pauw
+#
+# This file is part of cli-settings.
+
+# cli-settings is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# Foobar is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with cli-settings.  If not, see <http://www.gnu.org/licenses/>.
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/thipau/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+SOLARIZED_THEME=light
+ZSH_THEME="blinks"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -48,7 +67,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-nvm nvm)
+plugins=(git chruby)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,3 +106,4 @@ export PATH=~/bin:$PATH
 for rcfile in $HOME/.zshrc.d/*.zsh; do
   source $rcfile
 done
+

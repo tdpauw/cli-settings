@@ -20,9 +20,8 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 ln -s $DIR/.profile $HOME/.profile
-ln -s $DIR/.bashrc $HOME/.bashrc
-ln -s $DIR/.bashrc.d $HOME/.bashrc.d
-ln -s $DIR/.bash_profile $HOME/.bash_profile
+ln -s $DIR/.zshrc $HOME/.zshrc
+ln -s $DIR/.zshrc.d $HOME/.zshrc.d
 ln -s $DIR/.apparixrc $HOME/.apparixrc
 ln -s $DIR/.vimrc $HOME/.vimrc
 ln -s $DIR/.gitignore $HOME/.gitignore
