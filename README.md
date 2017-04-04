@@ -1,12 +1,11 @@
 # cli-settings
 Stores the settings for :
-* [BASH](https://www.gnu.org/software/bash/)
-* [bash-it](https://github.com/Bash-it/bash-it)
+* [zsh](http://www.zsh.org/)
+* [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 * [Node.js](https://nodejs.org)
 * [Ruby](https://www.ruby-lang.org/en/)
 * [Java](https://www.java.com/)
 * [Maven](https://maven.apache.org/)
-* [thefuck](https://github.com/nvbn/thefuck)
 * [Apparix](http://micans.org/apparix/)
 * [VIM](http://www.vim.org/)
 * [git](https://git-scm.com/)
