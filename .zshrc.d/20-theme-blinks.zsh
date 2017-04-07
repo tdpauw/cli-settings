@@ -22,8 +22,7 @@
 #OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 #SOFTWARE.
 
-#taken from oh-my-zsh
-
+#based on oh-my-zsh blinks theme
 # https://github.com/blinks zsh theme
 
 setopt prompt_subst
@@ -46,8 +45,8 @@ case ${SOLARIZED_THEME:-dark} in
     *)     bkg=black;;
 esac
 
-ZSH_THEME_GIT_PROMPT_PREFIX=" [%{%B%F{blue}%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{%f%k%b%K{${bkg}}%B%F{green}%}]"
+ZSH_THEME_GIT_PROMPT_PREFIX=" |%{%B%F{blue}%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{%f%k%b%K{${bkg}}%B%F{green}%}|"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{%F{red}%}*%{%f%k%b%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
