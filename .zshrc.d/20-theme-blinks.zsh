@@ -49,12 +49,14 @@ ZSH_THEME_GIT_PROMPT_PREFIX=" |%{%B%F{blue}%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{%f%k%b%K{${bkg}}%B%F{green}%}|"
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{%F{red}%}✗%{%f%k%b%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=" %{%F{green}%}✓%{%f%k%b%}"
-ZSH_THEME_GIT_PROMPT_BEHIND_REMOTE="%{%B%F{magenta}%}↓%{%f%k%b%}"
-ZSH_THEME_GIT_PROMPT_AHEAD_REMOTE="%{%B%F{magenta}%}↑%{%f%k%b%}"
-ZSH_THEME_GIT_PROMPT_DIVERGED_REMOTE="%{%B%F{magenta}%}↕%{%f%k%b%}"
+ZSH_THEME_GIT_PROMPT_REMOTE_STATUS_DETAILED=true
+ZSH_THEME_GIT_PROMPT_BEHIND_REMOTE="↓"
+ZSH_THEME_GIT_PROMPT_BEHIND_REMOTE_COLOR="%{%B%F{magenta}%}"
+ZSH_THEME_GIT_PROMPT_AHEAD_REMOTE="↑"
+ZSH_THEME_GIT_PROMPT_AHEAD_REMOTE_COLOR="%{%B%F{magenta}%}"
 
 PROMPT='%{%f%k%b%}
-%{%K{${bkg}}%B%F{green}%}%n%{%B%F{blue}%}@%{%B%F{cyan}%}%m%{%B%F{green}%} %{%b%F{yellow}%K{${bkg}}%}%~%{%B%F{green}%}$(git_prompt_info) $(git_remote_status) %E%{%f%k%b%}
+%{%K{${bkg}}%B%F{green}%}%n%{%B%F{blue}%}@%{%B%F{cyan}%}%m%{%B%F{green}%} %{%b%F{yellow}%K{${bkg}}%}%~%{%B%F{green}%}$(git_prompt_info) %E%{%f%k%b%}
 %{%K{${bkg}}%}$(_prompt_char)%{%K{${bkg}}%} %#%{%f%k%b%} '
 
 #displays current history event number
