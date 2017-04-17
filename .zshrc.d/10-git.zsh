@@ -73,7 +73,14 @@ function git_remote_status() {
         fi
 
         if [[ -n $ZSH_THEME_GIT_PROMPT_REMOTE_STATUS_DETAILED ]]; then
-            git_remote_status="$ZSH_THEME_GIT_PROMPT_REMOTE_STATUS_PREFIX$git_remote_status_detailed$ZSH_THEME_GIT_PROMPT_REMOTE_STATUS_SUFFIX"
+            local remote_name=${remote%%/*}
+            local remote_branch=${remote#${remote_name}/}
+            local remote_info=""
+            local num_remotes=$(git remote | wc -l 2> /dev/null)
+            if [[ $num_remotes -ge 2 ]]; then
+                remote_info="$ZSH_THEME_GIT_PROMPT_REMOTE_BRANCH_TRACK_PREFIX$remote_name "
+            fi
+            git_remote_status="$remote_info$ZSH_THEME_GIT_PROMPT_REMOTE_STATUS_PREFIX$git_remote_status_detailed$ZSH_THEME_GIT_PROMPT_REMOTE_STATUS_SUFFIX"
         fi
 
         echo $git_remote_status
