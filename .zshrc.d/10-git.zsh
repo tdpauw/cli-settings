@@ -29,7 +29,7 @@ function git_prompt_info() {
   local ref
   ref=$(command git symbolic-ref HEAD 2> /dev/null) || \
   ref=$(command git rev-parse --short HEAD 2> /dev/null) || return 0
-  echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/} $(git_remote_status)$(parse_git_dirty)$ZSH_THEME_GIT_PROMPT_SUFFIX"
+  echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$(git_remote_status)$(parse_git_dirty)$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
 
 # Checks if working tree is dirty
@@ -78,7 +78,10 @@ function git_remote_status() {
             local remote_info=""
             local num_remotes=$(git remote | wc -l 2> /dev/null)
             if [[ $num_remotes -ge 2 ]]; then
-                remote_info="$ZSH_THEME_GIT_PROMPT_REMOTE_BRANCH_TRACK_PREFIX$remote_name "
+                remote_info="$ZSH_THEME_GIT_PROMPT_REMOTE_BRANCH_TRACK_PREFIX$remote_name"
+            fi
+            if [[ -n ${git_remote_status_detailed} ]]; then
+                git_remote_status_detailed=" ${git_remote_status_detailed}"
             fi
             git_remote_status="$remote_info$ZSH_THEME_GIT_PROMPT_REMOTE_STATUS_PREFIX$git_remote_status_detailed$ZSH_THEME_GIT_PROMPT_REMOTE_STATUS_SUFFIX"
         fi
