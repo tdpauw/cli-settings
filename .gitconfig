@@ -12,3 +12,5 @@
 	tool = kdiff3
 [merge]
 	tool = kdiff3
+[format]
+	pretty = format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
