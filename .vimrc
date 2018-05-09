@@ -3,6 +3,7 @@ execute pathogen#infect()
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set autoindent
 
 syntax enable
 set background=light
