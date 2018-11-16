@@ -16,4 +16,5 @@
 # You should have received a copy of the GNU General Public License
 # along with cli-settings.  If not, see <http://www.gnu.org/licenses/>.
 
-export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
