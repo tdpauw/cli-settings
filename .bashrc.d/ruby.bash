@@ -18,4 +18,4 @@
 
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
-chruby ruby-2.5.1
+chruby ruby-2.5.3
