@@ -5,6 +5,14 @@ set shiftwidth=4
 set expandtab
 set autoindent
 
+set hlsearch "highlight search occurances
+set ignorecase "ignore the case when searching
+set smartcase "search case sensitive when the search word contains a capital
+set incsearch "incremental search
+
+set number
+set showcmd
+
 syntax enable
 set background=light
 let g:solarized_termcolors=256
