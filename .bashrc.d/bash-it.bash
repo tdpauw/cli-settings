@@ -17,11 +17,11 @@
 # along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
 
 # Path to the bash it configuration
-export BASH_IT="$HOME/.bash_it"
+export BASH_IT="${HOME}/.bash_it"
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
-export BASH_IT_THEME='bakke'
+export BASH_IT_THEME="${HOME}/.bash_it_theme"
 
 # (Advanced): Change this to the name of your remote repo if you
 # cloned bash-it with a remote other than origin such as `bash-it`.
@@ -29,14 +29,6 @@ export BASH_IT_THEME='bakke'
 
 # Set this to false to turn off version control status checking within the prompt for all themes
 export SCM_CHECK=true
-
-# Set vcprompt executable path for scm advance info in prompt (demula theme)
-# https://github.com/djl/vcprompt
-#export VCPROMPT_EXECUTABLE=~/.vcprompt/bin/vcprompt
-
-# (Advanced): Uncomment this to make Bash-it reload itself automatically
-# after enabling or disabling aliases, plugins, and completions.
-# export BASH_IT_AUTOMATIC_RELOAD_AFTER_CONFIG_CHANGE=1
 
 # Change this to your console based IRC client of choice.
 export IRC_CLIENT='irssi'
