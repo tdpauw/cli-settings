@@ -37,7 +37,7 @@ function terraform_prompt()
 {
     if [ -d .terraform ]; then
         workspace="$(terraform workspace show 2>/dev/null)"
-        echo " (${workspace})"
+        echo "(t:${workspace})"
     fi
 }
 
