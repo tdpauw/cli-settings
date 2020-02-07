@@ -27,3 +27,6 @@ unset MAILCHECK
 for rcfile in $HOME/.bashrc.d/*.bash; do
   source $rcfile
 done
+
+alias awsume=". awsume"
+
