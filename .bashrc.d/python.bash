@@ -16,7 +16,11 @@
 # You should have received a copy of the GNU General Public License
 # along with cli-settings.  If not, see <http://www.gnu.org/licenses/>.
 
-export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+readonly python_path=$(which python3)
+readonly python_version=$(${python_path} --version | sed -nE 's/.*([0-9]+\.[0-9]+)\.[0-9]+/\1/p')
+
+export PATH=$PATH:~/bin:~/Library/Python/${python_version}/bin
+
+export VIRTUALENVWRAPPER_PYTHON=${python_path}
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
-
