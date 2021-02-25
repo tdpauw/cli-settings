@@ -29,4 +29,7 @@ for rcfile in $HOME/.bashrc.d/*.bash; do
 done
 
 alias awsume=". awsume"
+function random {
+  env LC_CTYPE=C tr -dc 'A-Za-z0-9/_&#!' </dev/urandom | fold -w $1 | head -n 1
+}
 
