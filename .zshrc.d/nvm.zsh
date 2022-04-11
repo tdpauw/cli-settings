@@ -17,16 +17,5 @@
 # along with cli-settings.  If not, see <http://www.gnu.org/licenses/>.
 
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
-
-enter_directory() {
-  if [[ $PWD == $PREV_PWD ]]; then
-    return
-  fi
-
-  PREV_PWD=$PWD
-  [[ -f ".nvmrc" ]] && nvm use
-}
-
-export PROMPT_COMMAND=$PROMPT_COMMAND;enter_directory
-
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
