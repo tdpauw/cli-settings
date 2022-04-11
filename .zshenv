@@ -1,7 +1,7 @@
 export HISTSIZE=2000
 export SAVEHIST=$HISTSIZE
 export HISTFILE="$HOME/.zsh_history"
-export EDITOR=/usr/bin/vi
+export EDITOR=vim
 
 #don't check mail
 unset MAILCHECK
