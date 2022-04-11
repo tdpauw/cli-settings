@@ -16,10 +16,10 @@
 # You should have received a copy of the GNU General Public License
 # along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
 
-export PATH=/usr/local/sbin:$PATH:~/bin
-
 #bash
+export PATH=/usr/local/sbin:$PATH:~/bin
 export HISTSIZE=10000
+export EDITOR=/usr/bin/vi
 #don't check mail
 unset MAILCHECK
 
@@ -32,4 +32,3 @@ alias awsume=". awsume"
 function random {
   env LC_CTYPE=C tr -dc 'A-Za-z0-9/_&#!' </dev/urandom | fold -w $1 | head -n 1
 }
-
