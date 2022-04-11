@@ -16,4 +16,13 @@
 # You should have received a copy of the GNU General Public License
 # along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
 
-[[ -r ~/.bashrc ]] && source ~/.bashrc
+export PATH=$PATH:~/bin
+
+#zshrc.d
+for rcfile in $HOME/.zshrc.d/*.zsh; do
+  source $rcfile
+done
+
+function random {
+  env LC_CTYPE=C tr -dc 'A-Za-z0-9/_&#!' </dev/urandom | fold -w $1 | head -n 1
+}
