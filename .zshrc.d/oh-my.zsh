@@ -100,4 +100,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# modified prompt from robbyrussell theme
+# add full path: replace %c by %~
+PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
+PROMPT+=' %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info)'
+
 RPROMPT='$(tf_prompt_info)'
