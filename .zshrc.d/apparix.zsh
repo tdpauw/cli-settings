@@ -19,4 +19,4 @@
 # TODO download .bourne-apparix to ${HOME}
 # curl https://raw.githubusercontent.com/micans/apparix/main/.bourne-apparix --output .bourne-apparix
 
-source ${HOME}/.bourne-apparix
+source ${HOME}/.bourne-apparix > /dev/null
