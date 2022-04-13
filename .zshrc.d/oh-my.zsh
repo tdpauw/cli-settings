@@ -105,4 +105,8 @@ source $ZSH/oh-my-zsh.sh
 PROMPT="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
 PROMPT+=' %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info)'
 
-RPROMPT='$(tf_prompt_info)'
+# terraform plugin
+ZSH_THEME_TF_PROMPT_PREFIX="[tf:"
+
+# awsume profile + terraform workspace
+RPROMPT='${AWSUME_PROFILE:+[aws:$AWSUME_PROFILE]} $(tf_prompt_info)'
