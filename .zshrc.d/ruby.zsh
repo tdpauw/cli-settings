@@ -16,6 +16,7 @@
 # You should have received a copy of the GNU General Public License
 # along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
 
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
 
+# auto-switching of Rubies specified by .ruby-version files
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
