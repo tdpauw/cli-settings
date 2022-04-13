@@ -19,6 +19,8 @@
 readonly python_path=$(which python3)
 readonly python_version=$(${python_path} --version | sed -nE 's/.*([0-9]+\.[0-9]+)\.[0-9]+/\1/p')
 
+export PATH=${PATH}:${HOME}/Library/Python/${python_version}/bin
+
 export VIRTUALENVWRAPPER_PYTHON=${python_path}
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
