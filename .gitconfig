@@ -18,3 +18,4 @@
 	prune = true
 [pager]
 	branch = false
+	diff = false
