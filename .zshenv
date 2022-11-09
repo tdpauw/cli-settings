@@ -4,6 +4,8 @@ export SAVEHIST=$HISTSIZE
 export HISTFILE="$HOME/.zsh_history"
 export EDITOR=vim
 
+setopt HIST_IGNORE_SPACE
+
 #don't check mail
 unset MAILCHECK
 
