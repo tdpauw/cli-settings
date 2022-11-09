@@ -16,4 +16,12 @@
 # You should have received a copy of the GNU General Public License
 # along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
 
-eval "$(rbenv init - zsh)"
+# enable rbenv
+# eval "$(rbenv init - zsh)"
+
+# enable chruby
+source ${HOMEBREW_PREFIX}/share/chruby/chruby.sh
+# auto-switching of Ruby version specified by .ruby-version files
+source ${HOMEBREW_PREFIX}/share/chruby/auto.sh
+# default ruby
+chruby ruby-2.7.6
