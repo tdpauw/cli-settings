@@ -1,3 +1,4 @@
+export PATH=$PATH:~/bin
 export HISTSIZE=2000
 export SAVEHIST=$HISTSIZE
 export HISTFILE="$HOME/.zsh_history"
