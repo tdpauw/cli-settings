@@ -17,11 +17,11 @@
 # along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
 
 # enable rbenv
-# eval "$(rbenv init - zsh)"
+eval "$(rbenv init - zsh)"
 
 # enable chruby
-source ${HOMEBREW_PREFIX}/share/chruby/chruby.sh
+#source ${HOMEBREW_PREFIX}/share/chruby/chruby.sh
 # auto-switching of Ruby version specified by .ruby-version files
-source ${HOMEBREW_PREFIX}/share/chruby/auto.sh
+#source ${HOMEBREW_PREFIX}/share/chruby/auto.sh
 # default ruby
-chruby ruby-2.7.6
+#chruby ruby-2.7.6
