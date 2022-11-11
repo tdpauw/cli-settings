@@ -24,4 +24,4 @@ source ${HOMEBREW_PREFIX}/share/chruby/chruby.sh
 # auto-switching of Ruby version specified by .ruby-version files
 source ${HOMEBREW_PREFIX}/share/chruby/auto.sh
 # default ruby
-chruby ruby-2.7.6
+chruby ruby-3.1.2
