@@ -10,4 +10,5 @@ setopt HIST_IGNORE_SPACE
 unset MAILCHECK
 
 alias awsume=". awsume"
+alias assume="source assume"
 alias tf="terraform"
