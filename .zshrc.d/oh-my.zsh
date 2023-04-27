@@ -109,4 +109,4 @@ PROMPT+=' %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info)'
 ZSH_THEME_TF_PROMPT_PREFIX="[tf:"
 
 # awsume profile + terraform workspace
-RPROMPT='${AWSUME_PROFILE:+[aws:$AWSUME_PROFILE]} $(tf_prompt_info)'
+RPROMPT='${AWS_PROFILE:+[aws:$AWS_PROFILE]} $(tf_prompt_info)'

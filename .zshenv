@@ -9,6 +9,5 @@ setopt HIST_IGNORE_SPACE
 #don't check mail
 unset MAILCHECK
 
-alias awsume=". awsume"
+#Granted assume alias to source the assume script
 alias assume="source assume"
-alias tf="terraform"
