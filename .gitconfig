@@ -13,7 +13,7 @@
 [merge]
 	tool = kdiff3
 [format]
-	pretty = format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
+	pretty = format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset
 [fetch]
 	prune = true
 [pager]
