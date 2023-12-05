@@ -16,13 +16,11 @@
 # You should have received a copy of the GNU General Public License
 # along with cli-settings.  If not, see <http://www.gnu.org/licenses/>.
 
-# brew link python@3.12 seems broken
+readonly python_path=$(which python3)
+readonly python_version=$(${python_path} --version | sed -nE 's/.*([0-9]+\.[0-9]+)\.[0-9]+/\1/p')
 
-readonly python_version=3.12
-readonly python_path=$HOMEBREW_PREFIX/opt/python@${python_version}/libexec/bin
+export PATH=${PATH}:${HOME}/Library/Python/${python_version}/bin
 
-export PATH=${python_path}:${PATH}
-
-export VIRTUALENVWRAPPER_PYTHON=${python_path}/python3
+export VIRTUALENVWRAPPER_PYTHON=${python_path}
 export WORKON_HOME=~/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
