@@ -1,5 +1,5 @@
 export PATH=$PATH:~/bin
-export HISTSIZE=2000
+export HISTSIZE=100
 export SAVEHIST=$HISTSIZE
 export HISTFILE="$HOME/.zsh_history"
 export EDITOR=vim
