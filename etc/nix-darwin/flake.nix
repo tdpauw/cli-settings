@@ -32,6 +32,9 @@
       # The platform the configuration will be used on.
       nixpkgs.hostPlatform = "aarch64-darwin";
 
+      nix.settings.trusted-users = [ "thipau" ];
+
+      # touch ID to unlock sudo
       security.pam.enableSudoTouchIdAuth = true;
       system.defaults = {
         # hide dock
