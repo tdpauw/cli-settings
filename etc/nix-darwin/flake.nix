@@ -14,6 +14,7 @@
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
         [ pkgs.devenv
+          pkgs.direnv
         ];
 
       # Necessary for using flakes on this system.
