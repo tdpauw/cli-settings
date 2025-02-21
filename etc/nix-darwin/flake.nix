@@ -16,6 +16,7 @@
         [ pkgs.devenv
           pkgs.direnv
           pkgs.fzf
+          pkgs.asdf-vm
         ];
 
       # Necessary for using flakes on this system.
