@@ -23,6 +23,7 @@
           pkgs.hub
           pkgs.asdf-vm
           pkgs.volta
+          pkgs.yarn
         ];
 
       # Necessary for using flakes on this system.
