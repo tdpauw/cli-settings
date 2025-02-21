@@ -17,6 +17,7 @@
           pkgs.direnv
           pkgs.editorconfig-core-c
           pkgs.unixtools.watch
+          pkgs.jq
           pkgs.fzf
           pkgs.gh
           pkgs.hub
