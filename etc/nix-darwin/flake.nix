@@ -15,6 +15,7 @@
       environment.systemPackages =
         [ pkgs.devenv
           pkgs.direnv
+          pkgs.fzf
         ];
 
       # Necessary for using flakes on this system.
