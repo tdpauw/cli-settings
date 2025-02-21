@@ -15,6 +15,7 @@
       environment.systemPackages =
         [ pkgs.devenv
           pkgs.direnv
+          pkgs.editorconfig-core-c
           pkgs.unixtools.watch
           pkgs.fzf
           pkgs.gh
