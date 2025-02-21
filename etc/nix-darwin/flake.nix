@@ -16,6 +16,7 @@
         [ pkgs.devenv
           pkgs.direnv
           pkgs.nmap
+          pkgs.inetutils
           pkgs.editorconfig-core-c
           pkgs.unixtools.watch
           pkgs.jq
