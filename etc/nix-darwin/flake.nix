@@ -15,6 +15,7 @@
       environment.systemPackages =
         [ pkgs.devenv
           pkgs.direnv
+          pkgs.unixtools.watch
           pkgs.fzf
           pkgs.asdf-vm
           pkgs.volta
