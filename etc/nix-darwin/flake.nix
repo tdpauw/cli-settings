@@ -17,6 +17,8 @@
           pkgs.direnv
           pkgs.unixtools.watch
           pkgs.fzf
+          pkgs.gh
+          pkgs.hub
           pkgs.asdf-vm
           pkgs.volta
         ];
