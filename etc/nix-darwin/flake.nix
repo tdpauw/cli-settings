@@ -28,6 +28,14 @@
           pkgs.yarn
         ];
 
+      # Homebrew
+      homebrew.enable = true;
+      homebrew.onActivation = {
+        autoUpdate = false;
+        cleanup = "none";
+        upgrade = false;
+      };
+
       # Necessary for using flakes on this system.
       nix.settings.experimental-features = "nix-command flakes";
 
@@ -53,7 +61,7 @@
         dock.autohide = true;
         # do not rearrange spaces based on most the recent use
         dock.mru-spaces = false;
-    };
+      };
 
     };
   in
