@@ -17,6 +17,7 @@
           pkgs.direnv
           pkgs.fzf
           pkgs.asdf-vm
+          pkgs.volta
         ];
 
       # Necessary for using flakes on this system.
