@@ -15,6 +15,7 @@
       environment.systemPackages =
         [ pkgs.devenv
           pkgs.direnv
+          pkgs.nmap
           pkgs.editorconfig-core-c
           pkgs.unixtools.watch
           pkgs.jq
