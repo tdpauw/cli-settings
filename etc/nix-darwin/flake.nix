@@ -40,6 +40,7 @@
       homebrew.casks = [
         # intalls docker client and docker-compose
         "orbstack"
+        "displaylink"
       ];
 
       # Necessary for using flakes on this system.
