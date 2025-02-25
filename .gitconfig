@@ -5,6 +5,7 @@
 	helper = cache
 [push]
 	default = simple
+	autoSetupRemote = true
 [core]
 	autocrlf = input
 	excludesfile = /Users/thipau/.gitignore
