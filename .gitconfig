@@ -24,3 +24,5 @@
 	branch = false
 	diff = false
 	log = false
+[help]
+	autocorrect = prompt
