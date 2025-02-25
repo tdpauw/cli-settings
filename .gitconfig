@@ -9,7 +9,9 @@
 	autocrlf = input
 	excludesfile = /Users/thipau/.gitignore
 [diff]
-	tool = kdiff3
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
 [merge]
 	tool = kdiff3
 [format]
