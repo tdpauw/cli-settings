@@ -26,3 +26,5 @@
 	log = false
 [help]
 	autocorrect = prompt
+[pull]
+	rebase = true
