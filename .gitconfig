@@ -14,11 +14,12 @@
 	mnemonicPrefix = true
 	renames = true
 [merge]
-	tool = kdiff3
 [format]
 	pretty = format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset
 [fetch]
 	prune = true
+	pruneTags = true
+	all = true
 [pager]
 	branch = false
 	diff = false
