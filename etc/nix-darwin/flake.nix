@@ -28,6 +28,7 @@
           pkgs.yarn
           pkgs.dive
           pkgs.trivy
+          pkgs.granted
         ];
 
       # Homebrew
