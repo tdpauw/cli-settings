@@ -3,13 +3,25 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-24.11-darwin";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:LnL7/nix-darwin/nix-darwin-24.11";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nixpkgs-unstable }:
   let
-    configuration = { pkgs, ... }: {
+    configuration = { pkgs, pkgs-unstable, lib, ... }: {
+      nixpkgs.overlays = [
+        (final: _prev: {
+          unstable = import nixpkgs-unstable {
+            inherit (final) system config;
+          };
+        })
+      ];
+      nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+        "terraform"
+      ];
+
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
@@ -29,6 +41,8 @@
           pkgs.dive
           pkgs.trivy
           pkgs.granted
+          pkgs.unstable.terraform
+          pkgs.tflint
         ];
 
       # Homebrew
