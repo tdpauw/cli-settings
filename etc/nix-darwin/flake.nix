@@ -27,6 +27,7 @@
       environment.systemPackages =
         [ pkgs.devenv
           pkgs.direnv
+          pkgs.tree
           pkgs.nmap
           pkgs.inetutils
           pkgs.editorconfig-core-c
@@ -55,6 +56,7 @@
       homebrew.casks = [
         # intalls docker client and docker-compose
         "orbstack"
+        "microsoft-teams"
       ];
 
       # Necessary for using flakes on this system.
