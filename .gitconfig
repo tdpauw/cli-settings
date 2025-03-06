@@ -4,9 +4,10 @@
 [credential]
 	helper = cache
 [alias]
-
   amend = commit --amend
   d = diff --word-diff
+
+  unstage = restore --staged
 
   # Never run `git push --force`.
   # Be polite and say `git please` instead.
