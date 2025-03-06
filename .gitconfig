@@ -5,6 +5,10 @@
 	helper = cache
 [alias]
   d = diff --word-diff
+
+  # Never run `git push --force`.
+  # Be polite and say `git please` instead.
+  please = push --force-with-lease
 [push]
 	default = simple
 [core]
