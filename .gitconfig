@@ -9,6 +9,12 @@
   # Never run `git push --force`.
   # Be polite and say `git please` instead.
   please = push --force-with-lease
+
+  # Use the commit message from the undoed commit (`git undo`)
+  redo = commit -c ORIG_HEAD
+
+  # Undo previous commit
+  undo = reset HEAD~
 [push]
 	default = simple
 [core]
