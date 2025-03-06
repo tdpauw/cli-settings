@@ -4,6 +4,8 @@
 [credential]
 	helper = cache
 [alias]
+
+  amend = commit --amend
   d = diff --word-diff
 
   # Never run `git push --force`.
