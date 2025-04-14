@@ -44,6 +44,7 @@
           pkgs.granted
           pkgs.unstable.terraform
           pkgs.tflint
+          pkgs.sops
         ];
 
       # Homebrew
