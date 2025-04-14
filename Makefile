@@ -14,3 +14,6 @@ all:
 	ln -sf $(current_dir)/.vimrc ~/.vimrc
 	cp ./etc/nix-darwin/flake.nix /etc/nix-darwin/flake.nix
 	cd /etc/nix-darwin; darwin-rebuild switch
+
+update:
+	cd /etc/nix-darwin; nix flake update
