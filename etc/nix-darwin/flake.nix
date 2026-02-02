@@ -25,26 +25,7 @@
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages =
-        [ pkgs.devenv
-          pkgs.direnv
-          pkgs.tree
-          pkgs.nmap
-          pkgs.inetutils
-          pkgs.editorconfig-core-c
-          pkgs.unixtools.watch
-          pkgs.jq
-          pkgs.fzf
-          pkgs.gh
-          pkgs.hub
-          pkgs.asdf-vm
-          pkgs.volta
-          pkgs.yarn
-          pkgs.dive
-          pkgs.trivy
-          pkgs.granted
-          pkgs.unstable.terraform
-          pkgs.tflint
-          pkgs.sops
+        [ 
         ];
 
       # Homebrew
@@ -55,9 +36,6 @@
         upgrade = false;
       };
       homebrew.casks = [
-        # intalls docker client and docker-compose
-        "orbstack"
-        "microsoft-teams"
       ];
 
       # Necessary for using flakes on this system.
